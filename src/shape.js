@@ -1,22 +1,40 @@
-// TODO 1 create a Shape class (export default)
+// DTODO 1 create a Shape class (export default)
+export default class Shape{
+    constructor(color, x, y){
+        this.color = color;
+        this.x = x;
+        this.y = y;
+    }
 
-// TODO 2 add properties 'color', 'x' and 'y' to the shape class via the constructor
+    move(x, y){
+        this.x = x;
+        this.y = y;
+    }
 
-// TODO 3 create a new file (src/rectangle.js) and create a Rectangle class
+    get getColor(){return this.color;}
 
-// TODO 4 make the Rectangle class and extend from Shape
+    set changeColor(color){
+        this.color = color;
+    }
+}
 
-// TODO 5 add following function to Shape:
+// DTODO 2 add properties 'color', 'x' and 'y' to the shape class via the constructor
+
+// DTODO 3 create a new file (src/rectangle.js) and create a Rectangle class
+
+// DTODO 4 make the Rectangle class and extend from Shape
+
+// DTODO 5 add following function to Shape:
 /*
     void move(x, y) change x and y position of the shape
     string getColor() get the color and use the new Getter feature of ES6
     void changeColor set the color and use the new Setter feature of ES6
  */
-// TODO 6 write tests (Shape and Rectangle) for the methods you just wrote and validate the new position
+// DTODO 6 write tests (Shape and Rectangle) for the methods you just wrote and validate the new position
 
-// TODO 7 add properties 'width' and 'height' to the Rectangle class
+// DTODO 7 add properties 'width' and 'height' to the Rectangle class
 
-// TODO 8 add following functions to Rectangle:
+// DTODO 8 add following functions to Rectangle:
 /*
     void rotate90Degrees() rotate the Rectangle 90°
     void enlarge(additionalWidth, additionalHeight) enlarge the Rectangle
